@@ -1,0 +1,56 @@
+.btn {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+   }
+   .btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+   }
+
+   .primary__btn {
+    background: linear-gradient(to right, #ff8c00, #ff4500); /* Orange gradient */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+   }
+   
+   .primary__btn:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* More pronounced shadow */
+   }
+
+   .secondary__btn {
+    background-color: #f4f4f4; /* Light grey background */
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Smooth transition for animation */
+   }
+   
+   .secondary__btn:hover {
+    background-color: #e9e9e9; /* Slightly darker grey on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtler shadow */
+   }
+   
+   .secondary__btn:active {
+    transform: scale(0.95); /* Shrink on click */
+   }

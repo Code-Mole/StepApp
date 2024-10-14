@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import "../index.css";
-import { User } from "../TryContent";
+import { useUser } from "../TryContent";
+import Button from "./Button";
 
 const messages = [
   "Learn React ⚛️",
@@ -16,9 +17,9 @@ function Home() {
   const [isopen, setIsOpen] = useState(true);
   // const step = 1;
 
-  const { arr } = useContext(User);
+  const { name } = useUser();
 
-  console.log(arr);
+  console.log(name);
 
   function handlePrevious() {
     if (step > 1) setStep(step - 1);
@@ -67,11 +68,13 @@ function Home() {
               Next
             </button>
           </div>
-          {arr.map((item) => {
-            <h1>{item.name}</h1>;
-          })}
         </div>
       )}
+      {/* {name} */}
+
+      <Button type="primary__btn" onClick={() => {
+          setIsOpen(!isopen);
+        }}>Close</Button>
     </>
   );
 }
